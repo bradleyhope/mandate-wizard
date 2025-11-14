@@ -1,0 +1,70 @@
+# Claude Code Configuration for Mandate Wizard
+# This file customizes Claude Code behavior for this project
+
+# Project context
+project_name: "Mandate Wizard"
+project_type: "Full Stack AI Application"
+
+# Tech stack
+backend:
+  - Python 3.x
+  - Flask
+  - Pinecone (vector database)
+  - Neo4j (graph database)
+  - OpenAI API
+  - Gunicorn + Gevent
+
+frontend:
+  - React 18+
+  - TypeScript
+  - Vite
+  - Radix UI
+  - TanStack Query
+  - Express (production server)
+
+deployment:
+  - Railway (monorepo)
+  - Environment-based configuration
+  - Automated CI/CD from GitHub
+
+# Agent preferences
+preferred_agents:
+  backend: backend-architect
+  frontend: frontend-developer
+  testing: test-writer-fixer
+  deployment: devops-automator
+  ai: ai-engineer
+
+# Development workflow
+sprint_duration: 6 days
+focus: rapid iteration and shipping
+
+# Code standards
+- Follow existing patterns in the codebase
+- Add comprehensive logging
+- Write tests for new features
+- Update documentation
+- Consider performance implications
+- Maintain type safety (TypeScript)
+- Follow Python PEP 8 style guide
+
+# Key files to reference
+important_files:
+  - backend/hybridrag_engine_pinecone.py (core search logic)
+  - backend/app.py (main Flask application)
+  - frontend/client/src/App.tsx (main React app)
+  - DEPLOYMENT_GUIDE.md (deployment instructions)
+  - README.md (project overview)
+
+# Environment variables (reference only, actual values in .env)
+required_env_vars:
+  backend:
+    - PINECONE_API_KEY
+    - PINECONE_INDEX_NAME
+    - NEO4J_URI
+    - NEO4J_USER
+    - NEO4J_PASSWORD
+    - FRONTEND_URL
+  frontend:
+    - VITE_API_URL
+    - NODE_ENV
